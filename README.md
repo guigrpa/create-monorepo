@@ -5,7 +5,7 @@ A fast way to create monorepos with Yarn and Oao.
 
 ## Installation
 
-Create-monorepo requires no installation whatsoever. Just run `yarn create monorepo` and you're done!
+Create-monorepo requires **no installation at all** Just run `yarn create monorepo` and you're good to go!
 
 After that, you may want to check out [oao's documentation](https://github.com/guigrpa/oao#readme) to manage your monorepo.
 
