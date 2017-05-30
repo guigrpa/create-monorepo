@@ -1,0 +1,52 @@
+{
+  "name": "create-monorepo",
+  "version": "1.0.0",
+  "description": "A fast way to create monorepos with Yarn and Oao",
+  "bin": {
+    "create-monorepo": "lib/index.js"
+  },
+  "scripts": {
+    "build": "yarn lint && yarn compile && yarn xxl",
+    "lint": "eslint src",
+    "compile": "rm -rf lib && babel src -d lib --ignore \"**/__mocks__/**\",\"**/__tests__/**\"",
+    "compileWatch": "rm -rf lib && babel src -d lib --ignore \"**/__mocks__/**\",\"**/__tests__/**\" --watch",
+    "xxl": "xxl"
+  },
+  "repository": "guigrpa/create-monorepo",
+  "keywords": [
+    "monorepo",
+    "lerna",
+    "mono-repo",
+    "yarn",
+    "publish",
+    "git",
+    "oao"
+  ],
+  "author": "Guillermo Grau Panea",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/guigrpa/create-monorepo/issues"
+  },
+  "homepage": "https://github.com/guigrpa/create-monorepo#readme",
+  "dependencies": {
+    "babel-polyfill": "6.23.0",
+    "chalk": "1.1.3",
+    "inquirer": "3.0.6",
+    "shelljs": "0.7.7"
+  },
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-core": "6.24.1",
+    "babel-eslint": "7.2.3",
+    "babel-preset-es2015": "6.24.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "eslint": "3.19.0",
+    "eslint-config-airbnb": "15.0.1",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-jsx-a11y": "5.0.3",
+    "eslint-plugin-react": "7.0.1",
+    "xxl": "1.2.0"
+  },
+  "main": "index.js"
+}
